@@ -35,7 +35,6 @@ new Vue({
                 }
             ];
             this.events = loadEvents;
-            // this.events = loadEvents;
         },
 
         addEvent: function() {
