@@ -8,12 +8,13 @@ new Vue({
         },
         events: []
     },
-    ready: function() {
+    mounted: function() {
         this.fetchEvents();
+        
     },
     methods: {
         fetchEvents: function() {
-            var events = [
+            var loadEvents = [
                 {
                     id: 1,
                     name: 'TIFF',
@@ -33,7 +34,8 @@ new Vue({
                     date: '2015-03-11'
                 }
             ];
-            this.$set('events', events);
+            this.events = loadEvents;
+            // this.events = loadEvents;
         },
 
         addEvent: function() {
